@@ -1,0 +1,11 @@
+.cards-gallery {
+    background-color:#F6F6F6;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 3%;
+}

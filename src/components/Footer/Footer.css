@@ -1,14 +1,21 @@
 footer {
+    height: 125px;
+    width: 100%;
     background-color: black;
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: absolute;
+    bottom: 1;
+    left: 0;
 }
 
 footer img {
-
+    padding-top: 35px;
+    width: 75px;
 }
 
 .rights {
-    color:white;
+    padding-top: 25px;
+    color: white;
 }
