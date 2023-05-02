@@ -8,7 +8,10 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner
+        image="/images/rocksSeaLandscape.png"
+        text="Chez vous, partout et ailleurs"
+      />
       <Apartments />
       <Footer />
     </div>
