@@ -24,3 +24,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 700px)
+{
+    .banner p {
+        width: 50%;
+        top: 50%;
+        left: 30%;
+        white-space: inherit;
+        line-height: 25px;
+    }
+}

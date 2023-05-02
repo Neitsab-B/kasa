@@ -19,3 +19,18 @@ footer img {
     padding-top: 25px;
     color: white;
 }
+
+@media screen and (max-width:700px) {
+    footer {
+        height: 195px;
+
+    }
+
+    footer img {
+        padding-top: 50px;
+    }
+
+    .rights {
+        padding-top: 40px;
+    }
+}
