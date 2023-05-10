@@ -5,7 +5,7 @@ import "./header.css";
 const Header = () => {
   return (
     <header>
-      <img src="images/kasaLogoOrange.png" alt="Logo of Kasa in orange"></img>
+      <img src="/images/kasaLogoOrange.png" alt="Logo of Kasa in orange"></img>
       <nav>
         <Link to="/">Accueil</Link>
         <Link to="/about">A propos</Link>

@@ -1,0 +1,22 @@
+.slider {
+    height: 100%;
+    position: relative;
+}
+
+.leftArrow {
+    position: absolute;
+    top:50%;
+    transform: (translate(0, -50%));
+    left: 32px;
+    color: white;
+    cursor: pointer;
+}
+
+.rightArrow {
+    position: absolute;
+    top:50%;
+    transform: (translate(0, -50%));
+    right: 32px;
+    color: white;
+    cursor: pointer;
+}
