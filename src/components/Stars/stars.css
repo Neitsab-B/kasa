@@ -1,0 +1,11 @@
+.star {
+    filter: invert(61%) sepia(65%) saturate(2475%) hue-rotate(320deg) brightness(98%) contrast(105%);
+    width: 25px;
+    padding-left: 5px;
+}
+
+.star-solid {
+    filter: invert(61%) sepia(65%) saturate(2475%) hue-rotate(320deg) brightness(98%) contrast(105%);
+    width: 25px;
+    padding-left: 5px;
+}

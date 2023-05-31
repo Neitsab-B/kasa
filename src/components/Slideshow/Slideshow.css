@@ -1,46 +1,90 @@
-.wrapper {
-  display: flex;
-  padding-top: 25px;
-  padding-bottom: 15px;
-  justify-content: center;
-  align-items: center;
+.dropdown-wrapper {
+  margin-top: 2vw;
 }
 
-.item {
-  background-color: #F6F6F6;
-  margin-bottom: 20px;
-}
-
-.title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ff6060;
-  color: white;
+.dropdown {
+  overflow: hidden;
+  height: fit-content;
+  margin-bottom: 3vw;
+  background-color: #F7F7F7;
+  width: 100%;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.title span {
-  margin-right: 30px;
+.dropdown-header {
+  padding: 0.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FF6060;
+  border-radius: 5px;
+  height: 30px;
 }
 
-.title h2 {
-  margin-left: 15px;
+.arrow {
+  width: 20px;
+  margin-right: 1rem;
+  transform: rotate(90deg);
+}
+
+.arrow-open {
+  width: 20px;
+  margin-right: 1rem;
+  transform: rotate(270deg);
+}
+
+.dropdown-title {
+  padding-left: 0.5rem;
+  font-size: 13px;
   font-weight: 500;
 }
 
-.description {
-
-  color: #ff6060;
-  max-height: 0;
+.dropdown-text {
   overflow: hidden;
-  transition: all 0.7s cubic-bezier(0, 1, 0, 1)
 }
 
-.description.show {
-  margin-top: 0px;
-  height: auto;
-  max-height: 9999px;
-  transition: all 0.7s cubic-bezier(1, 0, 1, 0)
+.dropdown-text-close {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+
+.dropdown-text-open {
+  overflow: hidden;
+  padding: 1rem;
+  max-height: fit-content;
+  opacity: 1;
+  color: #FF6060;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 750px) {
+  .dropdown-wrapper {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dropdown-header {
+    height: 52px;
+    border-radius: 10px;
+  }
+
+  .dropdown-title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .dropdown-text-open p,
+  li {
+    line-height: 34.22px;
+    font-weight: 400;
+    font-size: 24px;
+  }
 }

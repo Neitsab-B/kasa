@@ -1,39 +1,51 @@
-import React, { useState } from "react";
-import "./imageSlider.css";
+import React, { useState } from 'react'
+import './imageSlider.css'
 
-const ImageSlider = ({ slides }) => {
-  const [currentIndex, setCurrent] = useState(0);
+const Slider = ({ props }) => {
+  let [index, setIndex] = useState(0)
 
-  const previousImage = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrent(newIndex);
-  };
+  const sliderNext = () => {
+    if (index === props.length - 1) {
+      setIndex(0)
+    } else {
+      setIndex(index + 1)
+    }
+  }
 
-  const nextImage = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrent(newIndex);
-  };
+  const sliderPrev = () => {
+    console.log(props)
+    if (index === 0) {
+      setIndex(props.length - 1)
+    } else {
+      setIndex(index - 1)
+    }
+  }
 
-  const slideStyles = {
-    width: "100%",
-    height: "100%",
-    borderRadius: "10px",
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundImage: `url(${slides[currentIndex].url})`,
-  };
+  if (props.length === 1) {
+    return (
+      <div className="slider">
+        <img className="slider__img" src={props[index]} alt={props} />
+      </div>
+    )
+  } else {
+    return (
+      <div className="slider">
+        <img
+        src='/icons/arrowRight.png'
+        className='arrow-right'
+          onClick={sliderNext}
+          alt="next"
+        />
+        <img
+        src='/icons/arrowLeft.png'
+        className='arrow-left'
+          onClick={sliderPrev}
+          alt="prev"
+        />
+        <img className="slider__img" src={props[index]} alt={props} />
+      </div>
+    )
+  }
+}
 
-  return (
-    <div className="slider">
-      <img src='./images/arrowLeft' className="leftArrow" onClick={previousImage} alt="Left arrow">     
-      </img>
-      <img src='./images/arrowRight' className="rightArrow" onClick={nextImage} alt="Right arrow">
-      </img>
-      <div style={slideStyles}></div>
-    </div>
-  );
-};
-
-export default ImageSlider;
+export default Slider

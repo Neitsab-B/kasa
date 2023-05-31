@@ -1,44 +1,45 @@
-.card-container {
-    width: 250px;
-    height: 225px;
-    border-radius: 10px;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+.card {
+  position: relative;
+  height: 255px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
 }
 
-.card-container:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
+.card_img {
+  inset: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-fit: cover;
 }
 
-.card-container img {
-    border-radius: 10px;
-    width: 250px;
-    height: 225px;
-    object-fit: cover;
+.card_title {
+  position: absolute;
+  bottom: 1vw;
+  left: 0.7vw;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1rem;
+  width: 100%;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: transparent;
 }
 
-.infos {
-    position: absolute;
-    white-space: break-spaces;
-    color: white;
-    font-weight: 500;
-    font-size: 13px;
-    bottom: 15px;
-    left: 12px;
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 700px)
-{
-    .card-container {
-        width: 100%;
-    }
-    .card-container img {
-        width: 100%;
-    }
-
-    .infos {
-        font-size: 14px;
-    }
+@media screen and (min-width: 750px) {
+  .card {
+    height: 340px;
+  }
 }
