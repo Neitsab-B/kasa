@@ -1,23 +1,24 @@
 .gallery {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    width: 100%;
-    overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+
+@media screen and (min-width: 750px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    border-radius: 25px;
+    padding: 3vw;
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vw;
+    background-color: #F7F7F7;
   }
-  
-  @media screen and (min-width: 750px) {
-    .gallery {
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      border-radius: 25px;
-      padding: 3vw;
-      grid-column-gap: 3vw;
-      grid-row-gap: 3vw;
-      background-color: var(--background-color);
-    }
-  }
+}
