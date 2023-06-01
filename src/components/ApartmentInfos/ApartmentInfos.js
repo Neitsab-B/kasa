@@ -36,18 +36,18 @@ const ApartmentInfos = (props) => {
                 <h2>{first}</h2>
               </div>
             </div>
-            <div className="product-host__rating">
+            <div className="apartment-host__rating">
               <Stars props={props.props.rating} />
             </div>
           </div>
         )}
-        {
-          <div className="slideshow-parent">
-            <Slideshow props={props.props.description} title={"Description"} />
-            <Slideshow props={props.props.equipments} title={"Equipements"} />
-          </div>
-        }
       </div>
+      {
+        <div className="slideshow-parent">
+          <Slideshow props={props.props.description} title={"Description"} />
+          <Slideshow props={props.props.equipments} title={"Equipements"} />
+        </div>
+      }
     </div>
   );
 };

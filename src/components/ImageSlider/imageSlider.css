@@ -19,6 +19,7 @@
   top: 45%;
   left: 5px;
   cursor: pointer;
+  width: 20px;
 }
 
 .arrow-left {
@@ -27,6 +28,7 @@
   top: 45%;
   right: 5px;
   cursor: pointer;
+  width: 20px;
 }
 
 @media screen and (min-width: 750px) {

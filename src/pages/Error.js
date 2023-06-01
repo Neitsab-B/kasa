@@ -10,11 +10,11 @@ const Error = () => {
       <div className="error-container">
         <div className="error-number">404</div>
         <div className="error-text">
-          Oups! La page que vous avez demandé n'existe pas.{" "}
+          Oups! La page que vous avez demandé n'existe pas.
         </div>
-        <nav>
+        <div className="back-home-link">
           <Link to="/">Retourner sur la page d'accueil</Link>
-        </nav>
+          </div>
       </div>
       <Footer />
     </div>

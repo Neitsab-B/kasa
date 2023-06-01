@@ -27,7 +27,9 @@ const About = () => {
   return (
     <div>
       <Header />
+      <div>
       <Banner image="./images/mountainsLandscape.png" />
+      </div>
       <div className="dropdown-wrapper">
         {aboutData.map((info, index) => {
           return <Slideshow props={info.body} title={info.title} key={index} />;
