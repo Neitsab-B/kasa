@@ -31,6 +31,13 @@
   width: 20px;
 }
 
+.count {
+  color: white;
+  position: absolute;
+  right: 50%;
+  top: 90%
+}
+
 @media screen and (min-width: 750px) {
   .slider {
     height: 415px;
