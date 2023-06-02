@@ -13,6 +13,7 @@ const ApartmentInfos = (props) => {
         <div className="apartment-informations">
           <h2 className="apartment__title">{props.props.title}</h2>
           <h3 className="apartment__location">{props.props.location}</h3>
+
           {Array.isArray(props.props.tags) && (
             <ul className="apartment__tags">
               {props.props.tags.map((i, index) => (
@@ -22,6 +23,7 @@ const ApartmentInfos = (props) => {
               ))}
             </ul>
           )}
+
         </div>
         {props.props.host && (
           <div className="apartment-host">
@@ -42,12 +44,14 @@ const ApartmentInfos = (props) => {
           </div>
         )}
       </div>
+
       {
         <div className="slideshow-parent">
           <Slideshow props={props.props.description} title={"Description"} />
           <Slideshow props={props.props.equipments} title={"Equipements"} />
         </div>
       }
+      
     </div>
   );
 };

@@ -18,7 +18,6 @@ const Slideshow = ({ props, title }) => {
           alt="arrow"
         />
       </div>
-
       <div
         className={
           toggle
